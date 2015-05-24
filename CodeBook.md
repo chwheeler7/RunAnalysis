@@ -1,3 +1,6 @@
+Data Definitions
+================
+
 This script generates two datasets - "full_set" and "full_means".
 
 The "full_set" dataset contains identifying columns "Type", "Subject" and "Activity", followed by means and standard deviations for each of the measures in the UCI HAR dataset.
