@@ -92,5 +92,9 @@ for (x in 4:ncol(full_set)) {
   colnames(full_means)[x-3]<-colnames(full_set)[x]
 }
 
+## Capture row names and assign to first column
+Type<-rownames(full_means)
+full_means<-cbind(Type,full_means)
+
 ## Remove everything but the "full_set" and "full_means" datasets
-rm(list=c("activity_labels","file","label","new_col_names","new_cols","x"))
+rm(list=c("activity_labels","file","label","new_col_names","new_cols","x","Type"))
